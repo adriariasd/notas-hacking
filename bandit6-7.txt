@@ -1,0 +1,13 @@
+pwd
+find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+diagonal es para que busque desde root
+-user especifica el usuario al que pertenece el archivo
+-group indica el grupo
+size indica el tamaño
+manda la salida de error al dispositivo null, ósea que se oculta
+
+bandit6@bandit:~$ find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
+/var/lib/dpkg/info/bandit7.password
+bandit6@bandit:~$ cat /var/lib/dpkg/info/bandit7.password
+morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+bandit6@bandit:~$

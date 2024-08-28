@@ -1,0 +1,10 @@
+bandit10@bandit:~$ ls
+data.txt
+bandit10@bandit:~$ cat data.txt
+VGhlIHBhc3N3b3JkIGlzIGR0UjE3M2ZaS2IwUlJzREZTR3NnMlJXbnBOVmozcVJyCg==
+bandit10@bandit:~$ cat data.txt | base64 --decode
+The password is dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+bandit10@bandit:~$
+
+El archivo contiene un mensaje codificado en base 64
+usamos la función base64 y especificamos que queremos decodificar al texto previamente sacado

@@ -1,0 +1,8 @@
+ls -R lista archivos de manera recursiva
+-type es el tipo de archivo
+find . -type f -size 1033c
+
+bandit5@bandit:~$ find . -type f -size 1033c
+./inhere/maybehere07/.file2
+bandit5@bandit:~$ cat ./inhere/maybehere07/.file2
+HWasnPhtq9AVKe0dmk45nxy20cvUa6EG

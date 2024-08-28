@@ -1,0 +1,300 @@
+C:\Users\Adrian Arias>ssh
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
+           [-b bind_address] [-c cipher_spec] [-D [bind_address:]port]
+           [-E log_file] [-e escape_char] [-F configfile] [-I pkcs11]
+           [-i identity_file] [-J [user@]host[:port]] [-L address]
+           [-l login_name] [-m mac_spec] [-O ctl_cmd] [-o option] [-p port]
+           [-Q query_option] [-R address] [-S ctl_path] [-W host:port]
+           [-w local_tun[:remote_tun]] destination [command]
+
+C:\Users\Adrian Arias>ssh bandit0@bandit.labs.overthewire.org -p 2220
+The authenticity of host '[bandit.labs.overthewire.org]:2220 ([13.50.165.192]:2220)' can't be established.
+ED25519 key fingerprint is SHA256:C2ihUBV7ihnV1wUXRb4RrEcLfXC5CXlhmAAM/urerLY.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[bandit.labs.overthewire.org]:2220' (ED25519) to the list of known hosts.
+                         _                     _ _ _
+                        | |__   __ _ _ __   __| (_) |_
+                        | '_ \ / _` | '_ \ / _` | | __|
+                        | |_) | (_| | | | | (_| | | |_
+                        |_.__/ \__,_|_| |_|\__,_|_|\__|
+
+
+                      This is an OverTheWire game server.
+            More information on http://www.overthewire.org/wargames
+
+bandit0@bandit.labs.overthewire.org's password:
+
+      ,----..            ,----,          .---.
+     /   /   \         ,/   .`|         /. ./|
+    /   .     :      ,`   .'  :     .--'.  ' ;
+   .   /   ;.  \   ;    ;     /    /__./ \ : |
+  .   ;   /  ` ; .'___,/    ,' .--'.  '   \' .
+  ;   |  ; \ ; | |    :     | /___/ \ |    ' '
+  |   :  | ; | ' ;    |.';  ; ;   \  \;      :
+  .   |  ' ' ' : `----'  |  |  \   ;  `      |
+  '   ;  \; /  |     '   :  ;   .   \    .\  ;
+   \   \  ',  /      |   |  '    \   \   ' \ |
+    ;   :    /       '   :  |     :   '  |--"
+     \   \ .'        ;   |.'       \   \ ;
+  www. `---` ver     '---' he       '---" ire.org
+
+
+Welcome to OverTheWire!
+
+If you find any problems, please report them to the #wargames channel on
+discord or IRC.
+
+--[ Playing the games ]--
+
+  This machine might hold several wargames.
+  If you are playing "somegame", then:
+
+    * USERNAMES are somegame0, somegame1, ...
+    * Most LEVELS are stored in /somegame/.
+    * PASSWORDS for each level are stored in /etc/somegame_pass/.
+
+  Write-access to homedirectories is disabled. It is advised to create a
+  working directory with a hard-to-guess name in /tmp/.  You can use the
+  command "mktemp -d" in order to generate a random and hard to guess
+  directory in /tmp/.  Read-access to both /tmp/ is disabled and to /proc
+  restricted so that users cannot snoop on eachother. Files and directories
+  with easily guessable or short names will be periodically deleted! The /tmp
+  directory is regularly wiped.
+  Please play nice:
+
+    * don't leave orphan processes running
+    * don't leave exploit-files laying around
+    * don't annoy other players
+    * don't post passwords or spoilers
+    * again, DONT POST SPOILERS!
+      This includes writeups of your solution on your blog or website!
+
+--[ Tips ]--
+
+  This machine has a 64bit processor and many security-features enabled
+  by default, although ASLR has been switched off.  The following
+  compiler flags might be interesting:
+
+    -m32                    compile for 32bit
+    -fno-stack-protector    disable ProPolice
+    -Wl,-z,norelro          disable relro
+
+  In addition, the execstack tool can be used to flag the stack as
+  executable on ELF binaries.
+
+  Finally, network-access is limited for most levels by a local
+  firewall.
+
+--[ Tools ]--
+
+ For your convenience we have installed a few useful tools which you can find
+ in the following locations:
+
+    * gef (https://github.com/hugsy/gef) in /opt/gef/
+    * pwndbg (https://github.com/pwndbg/pwndbg) in /opt/pwndbg/
+    * peda (https://github.com/longld/peda.git) in /opt/peda/
+    * gdbinit (https://github.com/gdbinit/Gdbinit) in /opt/gdbinit/
+    * pwntools (https://github.com/Gallopsled/pwntools)
+    * radare2 (http://www.radare.org/)
+
+--[ More information ]--
+
+  For more information regarding individual wargames, visit
+  http://www.overthewire.org/wargames/
+
+  For support, questions or comments, contact us on discord or IRC.
+
+  Enjoy your stay!
+
+bandit0@bandit:~$ whoami
+bandit0
+bandit0@bandit:~$ user
+Command 'user' not found, did you mean:
+  command 'iuser' from deb ipmiutil (3.1.9-3)
+  command 'fuser' from deb psmisc (23.6-1)
+  command 'userv' from deb userv (1.2.1~beta4)
+  command 'users' from deb coreutils (9.4-2ubuntu2)
+Try: apt install <deb name>
+bandit0@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
+
+C:\Users\Adrian Arias>
+
+
+
+
+
+------------------------------------------------------------------
+
+
+
+C:\Users\Adrian Arias>ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (C:\Users\Adrian Arias/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in C:\Users\Adrian Arias/.ssh/id_rsa
+Your public key has been saved in C:\Users\Adrian Arias/.ssh/id_rsa.pub
+The key fingerprint is:
+SHA256:beqEI8xFfCNvbq53ILRbfL8fEWtpq4iC42cUlx2AsRY adrian arias@DGAM
+The key's randomart image is:
++---[RSA 3072]----+
+|      Eo..       |
+|     ..o  .      |
+|      * oo .  .  |
+|     oo+oo.    + |
+|     ..=S o   *  |
+|   o .+++o.  o o |
+|    +oo+=o .  o  |
+|    o.=*...... . |
+|   ..+.++.. oo.  |
++----[SHA256]-----+
+
+C:\Users\Adrian Arias>cd .ssh
+
+C:\Users\Adrian Arias\.ssh>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 9040-8C87
+
+ Directorio de C:\Users\Adrian Arias\.ssh
+
+21/08/2024  11:25 a. m.    <DIR>          .
+21/08/2024  10:44 a. m.    <DIR>          ..
+21/08/2024  11:25 a. m.             2,602 id_rsa
+21/08/2024  11:25 a. m.               572 id_rsa.pub
+21/08/2024  10:44 a. m.               903 known_hosts
+21/08/2024  10:44 a. m.               117 known_hosts.old
+               4 archivos          4,194 bytes
+               2 dirs  90,617,167,872 bytes libres
+
+C:\Users\Adrian Arias\.ssh>type id_rsa pub
+
+id_rsa
+
+
+-----BEGIN OPENSSH PRIVATE KEY-----
+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
+-----END OPENSSH PRIVATE KEY-----
+El sistema no puede encontrar el archivo especificado.
+Error mientras se procesaba: pub.
+
+C:\Users\Adrian Arias\.ssh>dir
+ El volumen de la unidad C no tiene etiqueta.
+ El número de serie del volumen es: 9040-8C87
+
+ Directorio de C:\Users\Adrian Arias\.ssh
+
+21/08/2024  11:25 a. m.    <DIR>          .
+21/08/2024  10:44 a. m.    <DIR>          ..
+21/08/2024  11:25 a. m.             2,602 id_rsa
+21/08/2024  11:25 a. m.               572 id_rsa.pub
+21/08/2024  10:44 a. m.               903 known_hosts
+21/08/2024  10:44 a. m.               117 known_hosts.old
+               4 archivos          4,194 bytes
+               2 dirs  90,651,148,288 bytes libres
+
+C:\Users\Adrian Arias\.ssh>type id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCpATRlVNjpqOGc6Zwm/JfZkJbChwfuZZ1Lm3eN74b5Dd24gX/htk4sm8YCt8C8ofiqCiko6Mz3VyL9rjREbgNBNvWkVipAwX/807YsSWwc2afS5cqKiewQ2ekb/FFxNK96JbXUJcdJGiN9Ws7QRA9SPiMcqaj2sxnBqI4MxP28G7yLhXnrLJ3Jjx1il34GKRbv3xjjwozgzwq974/ReNzh2xAi3B/lqVTuUpWgSA6tcNtWN1YN0Jn1xCxlIpd+zN0o4yKQiKR5ldGimwYQmqrgQaElDuUgmP0Ad7U31vLwqG80c2MG/g1nf5FPYZPGYDNCMR0EsNfR7awIhBBplPZQxQ5BRRs9knnqpjdYAmi1OsH5FThOSo/eVBW0GPzGChLqfYc8vMj9oGmJ2srFSu+D1s8naU3zYb8A4QKesh+QuzE/4XAdo6oEzE6byvlaCpTVRLuWRjzx/wQCCVOs5IWH4U8miOFqKLSt/J3ccP4OnAlRPZJL2eaLgPgvkpEwbqU= adrian arias@DGAM
+
+C:\Users\Adrian Arias\.ssh>
+
+
+
+
+
+----------------------------------------------------------------
+
+PS C:\Users\Adrian Arias\Desktop\notas_redes> git init
+Initialized empty Git repository in C:/Users/Adrian Arias/Desktop/notas_redes/.git/
+PS C:\Users\Adrian Arias\Desktop\notas_redes> git config user.name "adriariasd"
+PS C:\Users\Adrian Arias\Desktop\notas_redes> git config user.name "adriariasd@gmail.com"
+PS C:\Users\Adrian Arias\Desktop\notas_redes> git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Turn this message off by running
+hint: "git config advice.addEmptyPathspec false"
+PS C:\Users\Adrian Arias\Desktop\notas_redes> git add .
+PS C:\Users\Adrian Arias\Desktop\notas_redes> git commit -m "first commit"
+[master (root-commit) 7ac7b86] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 notas_redes.txt
+PS C:\Users\Adrian Arias\Desktop\notas_redes> git branch -M main
+PS C:\Users\Adrian Arias\Desktop\notas_redes> git remote add origin git@github.com:adriariasd/notas-hacking.git
+PS C:\Users\Adrian Arias\Desktop\notas_redes> git push -u origin main
+The authenticity of host 'github.com (140.82.114.4)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\Users\Adrian Arias\Desktop\notas_redes> git push -u origin main
+The authenticity of host 'github.com (140.82.112.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+PS C:\Users\Adrian Arias\Desktop\notas_redes>
+PS C:\Users\Adrian Arias\Desktop\notas_redes> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\Adrian Arias\Desktop\notas_redes> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\Adrian Arias\Desktop\notas_redes> git push -u origin main
+The authenticity of host 'github.com (140.82.114.3)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 212 bytes | 212.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:adriariasd/notas-hacking.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+PS C:\Users\Adrian Arias\Desktop\notas_redes>

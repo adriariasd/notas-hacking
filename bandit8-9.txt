@@ -1,0 +1,11 @@
+sort data.txt | uniq -u
+sort ordena las líneas de texto
+| redirige la salida de un comando y la redirige al siguiente comando+
+uniq -u filtra la que es única
+uniq --help porque hay muchas cosas que se pueden hacer con ese comando
+
+bandit8@bandit:~$ ls
+data.txt
+bandit8@bandit:~$ sort data.txt | uniq -u
+4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+bandit8@bandit:~$ client_loop: send disconnect: Connection reset

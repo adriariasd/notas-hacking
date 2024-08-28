@@ -1,0 +1,14 @@
+bandit9@bandit:~$ ls
+data.txt
+bandit9@bandit:~$ file data.txt
+data.txt: data
+bandit9@bandit:~$ strings data.txt | grep ==
+\a!;========== the
+========== passwordf
+========== isc
+========== FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+bandit9@bandit:~$ exit
+logout
+Connection to bandit.labs.overthewire.org closed.
+
+el comando strings es para extraer cadenas leíbles de un archivo y el grep ya lo habíamos visto
