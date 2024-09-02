@@ -1,0 +1,9 @@
+bandit11@bandit:~$ ls
+data.txt
+bandit11@bandit:~$ cat data.txt
+Gur cnffjbeq vf 7k16JArUVv5LxVuJfsSVdbbtaHGlw9D4
+bandit11@bandit:~$ cat data.txt | tr [a-zA-Z] [n-za-mN-ZA-M]
+The password is 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+bandit11@bandit:~$ exit
+
+El primer espacio dice que tipo de caracteres vamos a sacar, ósea desde la a a la z minúsculas y mayúsculas y la n la va a rotar por la z y la a por la m

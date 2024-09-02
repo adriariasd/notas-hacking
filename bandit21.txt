@@ -1,0 +1,16 @@
+ls /etc/cron.d
+cronjob_bandit22
+cronjob_bandit23
+cronjob_bandit24
+e2scrub_all
+otw-tmp-dir
+sysstat
+ls /etc/cron.d/cronjob_bandit22
+/etc/cron.d/cronjob_bandit22
+cat /usr/bin/cronjob_bandit22.sh
+#!/bin/bash
+chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
+

@@ -1,0 +1,26 @@
+bandit20@bandit.labs.overthewire.org's password:
+nc localhost:5050
+nc: missing port number
+nc localhost 5050
+hola quien eres
+nc -lnvp 3445 <<< 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO &
+jobs
+nc -lnvp 3446 <<< 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO &
+Listening on 0.0.0.0 3446
+ls -la
+total 36
+drwxr-xr-x  2 root     root      4096 Jul 17 15:57 .
+drwxr-xr-x 70 root     root      4096 Jul 17 15:58 ..
+-rw-r--r--  1 root     root       220 Mar 31 08:41 .bash_logout
+-rw-r--r--  1 root     root      3771 Mar 31 08:41 .bashrc
+-rw-r--r--  1 root     root       807 Mar 31 08:41 .profile
+-rwsr-x---  1 bandit21 bandit20 15604 Jul 17 15:57 suconnect
+./suconnect 3446
+EeoULMCra2q0dSkYj561DX7s1CpBuOBt
+Read: 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+Password matches, sending next password
+Connection received on 127.0.0.1 40044
+
+el profe escribió en su computadora nc -lnvp 5050 <<< "hola quien eres"
+luego yo me conecte a ese puerto y me apareció su mensaje entonces yo mande ese password a un puerto que yo quisiera y luego con suconnect, el amperson manda un proceso al segundo plano
+
