@@ -1,0 +1,8 @@
+bandit22@bandit:~$ whoami
+bandit22
+bandit22@bandit:~$ myname=bandit23
+bandit22@bandit:~$ echo $(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+8ca319486bfbbc3663ea0fbe81326349
+bandit22@bandit:~$ cat /tmp/8ca319486bfbbc3663ea0fbe81326349
+0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
+

