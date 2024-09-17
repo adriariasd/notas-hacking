@@ -1,0 +1,59 @@
+drian@adrian-virtualbox:~/Desktop/CTF/challenge/home/ctf-player/drop-in$ bash guessing_game.sh 
+Welcome to the Binary Search Game!
+I'm thinking of a number between 1 and 1000.
+Enter your guess: 500
+Higher! Try again.
+Enter your guess: 750
+Higher! Try again.
+Enter your guess: 875
+Higher! Try again.
+Enter your guess: 925
+Lower! Try again.
+Enter your guess: 900
+Lower! Try again.
+Enter your guess: 886
+Lower! Try again.
+Enter your guess: 880
+Lower! Try again.
+Enter your guess: 877
+Higher! Try again.
+Enter your guess: 888
+Lower! Try again.
+Enter your guess: 878
+Congratulations! You guessed the correct number: 878
+cat: /challenge/metadata.json: No existe el archivo o el directorio
+Here's your flag: 
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge/home/ctf-player/drop-in$ ssh -p 50019 ctf-player@atlas.picoctf.net
+The authenticity of host '[atlas.picoctf.net]:50019 ([18.217.83.136]:50019)' can't be established.
+ED25519 key fingerprint is SHA256:M8hXanE8l/Yzfs8iuxNsuFL4vCzCKEIlM/3hpO13tfQ.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[atlas.picoctf.net]:50019' (ED25519) to the list of known hosts.
+ctf-player@atlas.picoctf.net's password: 
+Welcome to the Binary Search Game!
+I'm thinking of a number between 1 and 1000.
+Enter your guess: 500
+Higher! Try again.
+Enter your guess: 750
+Higher! Try again.
+Enter your guess: 875
+Lower! Try again.
+Enter your guess: 810
+Higher! Try again.
+Enter your guess: 842
+Higher! Try again.
+Enter your guess: 857
+Higher! Try again.
+Enter your guess: 866
+Higher! Try again.
+Enter your guess: 870
+Lower! Try again.
+Enter your guess: 868
+Higher! Try again.
+Enter your guess: 869
+Congratulations! You guessed the correct number: 869
+Here's your flag: picoCTF{g00d_gu355_3af33d18}
+Connection to atlas.picoctf.net closed.
+
+
+se trataba de atinar un numero al conectarse a un servidor

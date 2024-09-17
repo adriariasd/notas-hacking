@@ -1,0 +1,48 @@
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge3/drop-in$ git log
+commit 8dc51806c760dfdbb34b33a2008926d3d8e8ad49 (HEAD -> master)
+Author: picoCTF <ops@picoctf.com>
+Date:   Tue Mar 12 00:06:17 2024 +0000
+
+    remove sensitive info
+
+commit 87b85d7dfb839b077678611280fa023d76e017b8
+Author: picoCTF <ops@picoctf.com>
+Date:   Tue Mar 12 00:06:17 2024 +0000
+
+    create flag
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge3/drop-in$ git checkout 8dc51806c760dfdbb34b33a2008926d3d8e8ad49
+Nota: cambiando a '8dc51806c760dfdbb34b33a2008926d3d8e8ad49'.
+
+Te encuentras en estado 'detached HEAD'. Puedes revisar por aquí, hacer
+cambios experimentales y hacer commits, y puedes descartar cualquier
+commit que hayas hecho en este estado sin impactar a tu rama realizando
+otro checkout.
+
+Si quieres crear una nueva rama para mantener los commits que has creado,
+puedes hacerlo (ahora o después) usando -c con el comando checkout. Ejemplo:
+
+  git switch -c <nombre-de-nueva-rama>
+
+O deshacer la operación con:
+
+  git switch -
+
+Desactiva este aviso poniendo la variable de config advice.detachedHead en false
+
+HEAD está ahora en 8dc5180 remove sensitive info
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge3/drop-in$ ls
+message.txt
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge3/drop-in$ cat message.txt 
+TOP SECRET
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge3/drop-in$ git checkout ~87b85d7dfb839b077678611280fa023d76e017b8~
+error: ruta especificada '~87b85d7dfb839b077678611280fa023d76e017b8~' no concordó con ningún archivo conocido por git
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge3/drop-in$ git checkout 87b85d7dfb839b077678611280fa023d76e017b8
+La posición previa de HEAD era 8dc5180 remove sensitive info
+HEAD está ahora en 87b85d7 create flag
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge3/drop-in$ ls
+message.txt
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge3/drop-in$ cat message.txt 
+picoCTF{s@n1t1z3_ea83ff2a}
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge3/drop-in$
+
+el ejercicio dice que se borro la flag entonces hay que checar las versiones anteriores y luego vemos sus archivos

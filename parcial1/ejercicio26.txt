@@ -1,0 +1,15 @@
+En este ejercicio simplemente leemos un archivo y ahi esta la flag
+adrian@adrian-virtualbox:~/Desktop/CTF$  $$<   round here somewhere!8          
+              T    <        ,zRx
+                                   +zRx
+                                      $P    F▒J
+R                                               ?▒;*3$"DH  \J   A C
+D|P   eB B▒ E  B( H0 H8 M@r8A0A(B B▒B x   0 
+   o `                                       
+ 
+ picoCTF{d15a5m_t34s3r_ae0b3ef2}GCC: (Ubuntu 7.5.0-3ubuntu1~18.04) 7.5.08Tt  ` 
+ 
+  
+    ▒@   
+  $     k  1C@  Ji v     `e ▒H o0+ ▒@  : @        " 
+                                          

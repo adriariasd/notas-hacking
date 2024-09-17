@@ -1,0 +1,14 @@
+adrian@adrian-virtualbox:~/Desktop/CTF/files$ ls
+files
+adrian@adrian-virtualbox:~/Desktop/CTF/files$ find uber-secret.txt
+find: ‘uber-secret.txt’: No existe el archivo o el directorio
+adrian@adrian-virtualbox:~/Desktop/CTF/files$ find -r uber-secret.txt
+find: predicado desconocido `-r'
+adrian@adrian-virtualbox:~/Desktop/CTF/files$ find . -name uber-secret.txt
+./files/adequate_books/more_books/.secret/deeper_secrets/deepest_secrets/uber-secret.txt
+adrian@adrian-virtualbox:~/Desktop/CTF/files$ cd files/adequate_books/more_books/.secret/deeper_secrets/deepest_secrets/
+adrian@adrian-virtualbox:~/Desktop/CTF/files/files/adequate_books/more_books/.secret/deeper_secrets/deepest_secrets$ cat uber-secret.txt 
+picoCTF{f1nd_15_f457_ab443fd1}
+adrian@adrian-virtualbox:~/Desktop/CTF/files/files/adequate_books/more_books/.secret/deeper_secrets/deepest_secrets$
+
+Este solo utilizamos el comando find para que encuentre el archivo y lo busque en todos los subdirectorios

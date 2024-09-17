@@ -1,0 +1,19 @@
+adrian@adrian-virtualbox:~/Desktop/CTF$ nc jupiter.challenges.picoctf.org 29956
+Let us see how data is stored
+animation
+Please give the 01100001 01101110 01101001 01101101 01100001 01110100 01101001 01101111 01101110 as a word.
+...
+you have 45 seconds.....
+
+Input:
+animation
+Please give me the  141 156 151 155 141 164 151 157 156 as a word.
+Input:
+animation
+Please give me the 736c75646765 as a word.
+Input:
+sludge
+You've beaten the challenge
+Flag: picoCTF{learning_about_converting_values_b375bb16}
+
+en este ejerciocio solo tenemos que convertir los numeros que nos dan a su respectivo codigo para poder sacar las palabras

@@ -1,0 +1,3 @@
+En este ejercicio nos pide que convirtamos de hexadecimal a decimal y esa es la flag
+0x3D
+picoCTF{61}

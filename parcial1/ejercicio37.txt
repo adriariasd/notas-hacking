@@ -1,0 +1,8 @@
+En este ejercicio tenemos 3 archivos
+pero solo tenemos que leer el script de python e ingresamos las 7 claves
+pos_pw_list = ["6997", "3ac8", "f0ac", "4b17", "ec27", "4e66", "865e"]
+
+adrian@adrian-virtualbox:~/Desktop/CTF$ python3 level3.py 
+Please enter correct password for flag: 865e
+Welcome back... your flag, user:
+picoCTF{m45h_fl1ng1ng_2b072a90}

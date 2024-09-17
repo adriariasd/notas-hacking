@@ -1,0 +1,2 @@
+En este solo tenemos que decodificar una linea de texto bDNhcm5fdGgzX3IwcDM1
+es base64 entonces la flag es: picoCTF{l3arn_th3_r0p35}

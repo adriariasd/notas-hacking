@@ -1,0 +1,10 @@
+adrian@adrian-virtualbox:~/Desktop/CTF$ python3 fixme1.py 
+  File "/home/adrian/Desktop/CTF/fixme1.py", line 20
+    print('That is correct! Here\'s your flag: ' + flag)
+IndentationError: unexpected indent
+adrian@adrian-virtualbox:~/Desktop/CTF$ nano fixme1.py 
+adrian@adrian-virtualbox:~/Desktop/CTF$ python3 fixme1.py 
+That is correct! Here's your flag: picoCTF{1nd3nt1ty_cr1515_182342f7}
+adrian@adrian-virtualbox:~/Desktop/CTF$ 
+
+en este ejercicio corregimos un error de identacion con el comando nano

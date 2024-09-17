@@ -1,0 +1,12 @@
+adrian@adrian-virtualbox:~/Desktop/CTF$ chmod +x warm
+adrian@adrian-virtualbox:~/Desktop/CTF$ sh warm
+warm: 1: ELF: not found
+warm: 3: Syntax error: Unterminated quoted string
+adrian@adrian-virtualbox:~/Desktop/CTF$ 
+adrian@adrian-virtualbox:~/Desktop/CTF$ ./warm
+Hello user! Pass me a -h to learn what I can do!
+adrian@adrian-virtualbox:~/Desktop/CTF$ ./warm -h
+Oh, help? I actually don't do much, but I do have this flag here: picoCTF{b1scu1ts_4nd_gr4vy_6635aa47}
+adrian@adrian-virtualbox:~/Desktop/CTF$
+
+En este solo tenemos que correr un programa, primero le damos permisos y luego lo ejecutamos

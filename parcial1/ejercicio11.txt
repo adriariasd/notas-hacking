@@ -1,0 +1,12 @@
+adrian@adrian-virtualbox:~/Desktop/CTF$ ls
+big-zip-files  challenge1  challenge3  codebook.txt  enc_flag
+challenge      challenge2  challenge4  code.py       files
+adrian@adrian-virtualbox:~/Desktop/CTF$ python code.py 
+Orden «python» no encontrada. Quizá quiso decir:
+  la orden «python3» del paquete deb «python3»
+  la orden «python» del paquete deb «python-is-python3»
+adrian@adrian-virtualbox:~/Desktop/CTF$ python3 code.py 
+picoCTF{c0d3b00k_455157_197a982c}
+adrian@adrian-virtualbox:~/Desktop/CTF$
+
+En este ejercicio se necesita ejecutar un codigo de python

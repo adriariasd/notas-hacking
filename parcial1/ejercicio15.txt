@@ -1,0 +1,12 @@
+adrian@adrian-virtualbox:~/Desktop/CTF$ nc saturn.picoctf.net 51117
+'picoCTF{gl17ch_m3_n07_' + chr(0x62) + chr(0x64) + chr(0x61) + chr(0x36) + chr(0x38) + chr(0x66) + chr(0x37) + chr(0x35) + '}'
+^C
+adrian@adrian-virtualbox:~/Desktop/CTF$ touch decodifica.py
+adrian@adrian-virtualbox:~/Desktop/CTF$ nano decodifica.py 
+adrian@adrian-virtualbox:~/Desktop/CTF$ python3 decodifica.py 
+picoCTF{gl17ch_m3_n07_bda68f75}
+adrian@adrian-virtualbox:~/Desktop/CTF$ 
+
+En este ejercicio nos dice que el archivo es valido en python entonces lo que se hace es crear un script de python sencillo que transforme esas letras el script que hice fue el siguiente:
+
+print("picoCTF{gl17ch_m3_n07_" + chr(0x62) + chr(0x64) + chr(0x61) + chr(0x36) + chr(0x38) + chr(0x66) + chr(0x37) + chr(0x35)+ "}")

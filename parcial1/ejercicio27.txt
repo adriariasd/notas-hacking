@@ -1,0 +1,4 @@
+adrian@adrian-virtualbox:~/Desktop/CTF$ strings strings | grep pico
+picoCTF{5tRIng5_1T_7f766a23}
+
+En este ejerciocio se nos da un archivo que se llama strings y le aplicamos la funcion strings pero como hay muchas solo filtramos la que queremos

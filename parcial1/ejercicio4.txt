@@ -1,0 +1,27 @@
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge1$ ls
+drop-in
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge1$ cd drop-in/
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge1/drop-in$ ls
+message.py
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge1/drop-in$ cat message.py 
+print("Hello, World!"
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge1/drop-in$ ls -la
+total 16
+drwx------ 3 adrian adrian 4096 sep 16 23:06 .
+drwx------ 3 adrian adrian 4096 sep 16 23:06 ..
+drwx------ 8 adrian adrian 4096 sep 16 23:06 .git
+-rw-rw-rw- 1 adrian adrian   22 sep 16 23:06 message.py
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge1/drop-in$ cd .git
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge1/drop-in/.git$ ls
+branches  COMMIT_EDITMSG  config  description  HEAD  hooks  index  info  logs  objects  refs
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge1/drop-in/.git$ cat COMMIT_EDITMSG 
+important business work
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge1/drop-in/.git$ cd logs/
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge1/drop-in/.git/logs$
+
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge1/drop-in/.git/logs$ grep picoCTF HEAD 
+0000000000000000000000000000000000000000 caa945839a2fc0fb52584b559b4e89ac7c46bf54 picoCTF <ops@picoctf.com> 1710202031 +0000   commit (initial): create top secret project
+caa945839a2fc0fb52584b559b4e89ac7c46bf54 8c83358c32daee3f8b597d2b853c1d1966b23f0a picoCTF{@sk_th3_1nt3rn_2c6bf174} <ops@picoctf.com> 1710202031 +0000  commit: optimize file size of prod code
+8c83358c32daee3f8b597d2b853c1d1966b23f0a 6f9f8fc8907eefb90424f81d659f717c5c0b2c8a picoCTF <ops@picoctf.com> 1710202031 +0000   commit: important business work
+
+Se nos da una pista de que alguien esta haciendo commits mal entonces vemos en las carpetas ocultas de git y buscamos en los logs y ahi es donde se encuentra la flag

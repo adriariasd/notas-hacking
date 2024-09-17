@@ -1,0 +1,12 @@
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge4/drop-in$ ssh ctf-player@titan.picoctf.net -p 54299
+The authenticity of host '[titan.picoctf.net]:54299 ([3.139.174.234]:54299)' can't be established.
+ED25519 key fingerprint is SHA256:4S9EbTSSRZm32I+cdM5TyzthpQryv5kudRP9PIKT7XQ.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '[titan.picoctf.net]:54299' (ED25519) to the list of known hosts.
+ctf-player@titan.picoctf.net's password: 
+Welcome ctf-player, here's your flag: picoCTF{s3cur3_c0nn3ct10n_65a7a106}
+Connection to titan.picoctf.net closed.
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge4/drop-in$
+
+En este solo es conectarse a un servidor y puerto especifico

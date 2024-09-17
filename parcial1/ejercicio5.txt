@@ -1,0 +1,48 @@
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge2/drop-in$ ls
+flag.py
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge2/drop-in$ cat flag.py 
+print("Printing the flag...")
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge2/drop-in$ ls -la
+total 16
+drwx------ 3 adrian adrian 4096 sep 16 23:24 .
+drwx------ 3 adrian adrian 4096 sep 16 23:24 ..
+-rw-rw-rw- 1 adrian adrian   30 sep 16 23:24 flag.py
+drwx------ 8 adrian adrian 4096 sep 16 23:24 .git
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge2/drop-in$ cd .git
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge2/drop-in/.git$ ls
+branches  COMMIT_EDITMSG  config  description  HEAD  hooks  index  info  logs  objects  refs
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge2/drop-in/.git$ cd ..
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge2/drop-in$ git branch -a
+  feature/part-1
+  feature/part-2
+  feature/part-3
+* main
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge2/drop-in$ git branch
+  feature/part-1
+  feature/part-2
+  feature/part-3
+* main
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge2/drop-in$
+
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge2/drop-in$ git checkout feature/part-1
+Cambiado a rama 'feature/part-1'
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge2/drop-in$ ls
+flag.py
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge2/drop-in$ cat flag.py 
+print("Printing the flag...")
+print("picoCTF{t3@mw0rk_", end='')adrian@adrian-virtualbox:~/Desktop/CTF/challenge2/drop-in$ cagit checkout feature/part-2
+Cambiado a rama 'feature/part-2'
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge2/drop-in$ cat flag.py 
+print("Printing the flag...")
+
+print("m@k3s_th3_dr3@m_", end='')adrian@adrian-virtualbox:~/Desktop/CTF/challenge2/drop-in$ cat
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge2/drop-in$ git checkout feature/part-3
+Cambiado a rama 'feature/part-3'
+adrian@adrian-virtualbox:~/Desktop/CTF/challenge2/drop-in$ cat flag.py 
+print("Printing the flag...")
+
+print("w0rk_2c91ca76}")
+
+este ejercicio nos dice que varios desarrolladores estan trabajando en un programa que imprime flags, entonces vemos que hay tres ramas y vamos viendo los contenidos de cada una, al checar todas las ramas podemos ver que imprime la bandera
+
+picoCTF{t3@mw0rk_m@k3s_th3_dr3@m_w0rk_2c91ca76}

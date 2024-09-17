@@ -1,0 +1,22 @@
+adrian@adrian-virtualbox:~/Desktop/CTF$ python3 level1.py 
+Please enter correct password for flag: ^CTraceback (most recent call last):
+  File "/home/adrian/Desktop/CTF/level1.py", line 28, in <module>
+    level_1_pw_check()
+  File "/home/adrian/Desktop/CTF/level1.py", line 18, in level_1_pw_check
+    user_pw = input("Please enter correct password for flag: ")
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+
+adrian@adrian-virtualbox:~/Desktop/CTF$ cat level1.flag.txt.enc 
+FPR
+   umw
+iK
+_i
+  UDadrian@adrian-virtualbox:~/Desktop/CTF$ nano level1.py
+adrian@adrian-virtualbox:~/Desktop/CTF$ python3 level1.py 
+Please enter correct password for flag: 691d
+Welcome back... your flag, user:
+picoCTF{545h_r1ng1ng_56891419}
+adrian@adrian-virtualbox:~/Desktop/CTF$ 
+
+En este ejercicio nos dice que chequemos con nano el programa y ahi nos dice la contraseña que se necesita

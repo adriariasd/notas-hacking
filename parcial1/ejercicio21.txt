@@ -1,0 +1,3 @@
+En este solo se tiene que convertir un numero a base 2
+42 en binario es 101010
+entonces la flag es picoCTF{101010}

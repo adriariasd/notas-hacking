@@ -1,0 +1,5 @@
+En este ejercicio nos conectamos al puerto y depues ejecutamos
+sudo -l
+sudo vi /root 
+para poder ver los archivos de root y ahora simplemente navegamos al archivo file y damos enter para ver sus contenidos
+picoCTF{uS1ng_v1m_3dit0r_021d10ab}

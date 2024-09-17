@@ -1,0 +1,3 @@
+En este ejercicio nos da un numero en hexadecimal y nos dice que si fuera formato ASCII que letra seria?
+0x70 en decimal es 112 y ese es el codigo ASCII para la letra p
+picoCTF{p}

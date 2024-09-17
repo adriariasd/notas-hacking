@@ -1,0 +1,13 @@
+adrian@adrian-virtualbox:~/Desktop/CTF$ python code.py 
+Orden «python» no encontrada. Quizá quiso decir:
+  la orden «python3» del paquete deb «python3»
+  la orden «python» del paquete deb «python-is-python3»
+adrian@adrian-virtualbox:~/Desktop/CTF$ python3 code.py 
+picoCTF{c0d3b00k_455157_197a982c}
+adrian@adrian-virtualbox:~/Desktop/CTF$ python3 convertme.py 
+If 21 is in decimal base, what is it in binary base?
+Answer: 10101
+That is correct! Here's your flag: picoCTF{4ll_y0ur_b4535_762f748e}
+adrian@adrian-virtualbox:~/Desktop/CTF$ 
+
+En este ejercicio ejecutamos un codigo de python y luego lo contestamos

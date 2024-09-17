@@ -1,0 +1,30 @@
+Special$ ls
+Is 
+sh: 1: Is: not found
+Special$ ${parameter?ls}
+${parameter?ls} 
+sh: 1: parameter: ls
+Special$ ${:ls}                 
+${:ls} 
+sh: 1: Bad substitution
+Special$ ${parameter=ls}
+${parameter=ls} 
+blargh
+Special$ ${parameter=cd blargh}
+${parameter=cd blargh} 
+Special$ ${parameter=ls}
+${parameter=ls} 
+blargh
+Special$ ${parameter=ls blargh}
+${parameter=ls blargh} 
+flag.txt
+Special$ ${parameter = cat < blargh/flag.txt}
+Parameter = cat < blargh/flag.txt} 
+sh: 1: cannot open blargh/flag.txt}: No such file
+sh: 1: Parameter: not found
+Special$ ${parameter=cat < blargh/flag.txt}
+${parameter=cat < blargh/flag.txt} 
+cat: '<': No such file or directory
+picoCTF{5p311ch3ck_15_7h3_w0r57_a60bdf40}Special$
+
+En este archivo lo que se tiene que hacer es conectarse al servidor pero nos abre una consola especial que no lee los comandos normales, para eso tenemos que especificar mejor
