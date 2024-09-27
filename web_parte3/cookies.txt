@@ -1,0 +1,1 @@
+El ejercicio de las cookies está algo extenso, pero básicamente es checar las cookies de una página, nos ayudamos de una herramienta que nos sirve como proxy, y de una app que se llama burpsuite
