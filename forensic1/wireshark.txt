@@ -1,0 +1,16 @@
+wireshark nos sirve para capturar paquetes 
+picoCTF{StaT31355_636f6e6e}
+
+┌──(kali㉿kali)-[~/picoctf/forensic/sharkonwire]
+└─$ ls    
+capture.pcap
+                                                                             
+┌──(kali㉿kali)-[~/picoctf/forensic/sharkonwire]
+└─$ file capture.pcap 
+capture.pcap: pcap capture file, microsecond ts (little-endian) - version 2.4 (Ethernet, capture length 262144)
+                                                                             
+┌──(kali㉿kali)-[~/picoctf/forensic/sharkonwire]
+└─$ wireshark capture.pcap &
+[1] 96809
+
+Luego le damos click a un paquete udp y le damos follow y la flag esta en uno de esos archivos
