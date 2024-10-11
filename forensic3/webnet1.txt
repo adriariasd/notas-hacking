@@ -1,0 +1,3 @@
+┌──(kali㉿kali)-[~/webnet1]
+└─$ strings vulture.jpg | grep pico
+picoCTF{honey.roasted.peanuts}
