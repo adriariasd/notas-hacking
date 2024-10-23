@@ -1,0 +1,13 @@
+data = open('message.txt','r').read().split()
+flag = ''
+for c in data:
+        char = int(c) % 37
+        if char>=0 and char<=25:
+                s=chr(char+65)
+        elif char>=26 and char <=35:
+                s=chr(char+22)
+        elif char==36:
+                s='_'
+        flag+=s
+        print(s)
+print(flag)
