@@ -1,0 +1,24 @@
+Primero hice una copia de el sitio web y luego use grep para buscar la flag
+─(kali㉿kali)-[~/copia_web]
+└─$ httrack http://saturn.picoctf.net:50700/
+Mirror launched on Sun, 27 Oct 2024 01:15:04 by HTTrack Website Copier/3.49-5 [XR&CO'2014]
+mirroring http://saturn.picoctf.net:50700/ with the wizard help..
+* saturn.picoctf.net:50700/js/jquery.mCustomScrollbar.concat.min.js (45479 by21/26: saturn.picoctf.net:50700/js/jquery.mCustomScrollbar.concat.min.js (0 bDone.: saturn.picoctf.net:50700/images/fevicon.png (153 bytes) - 404
+Thanks for using HTTrack!
+                                                                             
+┌──(kali㉿kali)-[~/copia_web]
+└─$ ls -l                                   
+total 32
+-rw-r--r-- 1 kali kali 4243 Oct 27 01:15 backblue.gif
+-rw-r--r-- 1 kali kali  828 Oct 27 01:15 fade.gif
+drwx------ 2 kali kali 4096 Oct 27 01:15 hts-cache
+-rw-rw-r-- 1 kali kali 1077 Oct 27 01:15 hts-log.txt
+-rw-r--r-- 1 kali kali 5214 Oct 27 01:15 index.html
+drwxr-xr-x 5 kali kali 4096 Oct 27 01:15 saturn.picoctf.net_50700
+                                                                             
+┌──(kali㉿kali)-[~/copia_web]
+└─$ grep -nr "picoCTF"                      
+saturn.picoctf.net_50700/css/style.css:328:/** banner_main picoCTF{1nsp3ti0n_0f_w3bpag3s_ec95fa49} **/
+                                                                             
+┌──(kali㉿kali)-[~/copia_web]
+└─$ 

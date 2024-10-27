@@ -1,0 +1,12 @@
+En el css de la página encontramos la primera parte de la bandera
+body {
+  background-color: lightblue;
+}
+
+/*  picoCTF{1nclu51v17y_1of2_  */
+en el script.js encontramos la segunda parte function greetings()
+{
+  alert("This code is in a separate file!");
+}
+
+//  f7w_2of2_b8f4b022}

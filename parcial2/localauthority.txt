@@ -1,0 +1,14 @@
+En este ejercicio primero abrimos la página que nos dan, luego la inspeccionamos y analizamos el login.php despues podemos ver que hay uno que se llama secure.js aqui encontramos el siguiente codigo
+function checkPassword(username, password)
+{
+  if( username === 'admin' && password === 'strongPassword098765' )
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
+}
+y usamos eso para iniciar sesion
+picoCTF{j5_15_7r4n5p4r3n7_a8788e61}

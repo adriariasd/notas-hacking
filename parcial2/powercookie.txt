@@ -1,0 +1,2 @@
+en power cookie inspeccionamos una cookie que se llama is admin que tiene valor 0 pero lo editamos y lo cambiamos a uno entonces recargamos la pagina y nos da la bandera
+picoCTF{gr4d3_A_c00k13_5d2505be}
