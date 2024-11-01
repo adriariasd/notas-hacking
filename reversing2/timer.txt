@@ -1,0 +1,16 @@
+──(kali㉿kali)-[~/timer]
+└─$ unzip timer.apk     
+Archive:  timer.apk
+  inflating: META-INF/com/android/build/gradle/app-metadata.properties  
+  inflating: classes3.dex            
+  inflating: classes2.dex  
+(kali㉿kali)-[~/timer]
+└─$ find . -name classes3.dex
+./classes3.dex
+                                                                             
+┌──(kali㉿kali)-[~/timer]
+└─$ strings classes3.dex | grep pico
+*picoCTF{t1m3r_r3v3rs3d_succ355fully_17496}
+                                                                             
+┌──(kali㉿kali)-[~/timer]
+└─$ 

@@ -1,0 +1,10 @@
+adrian@adrian-virtualbox:~/reversing2$ nc saturn.picoctf.net 53523
+Enter the address in hex to jump to, excluding '0x': 000000000040129e
+You input 0x40129e
+You won!
+picoCTF{n3v3r_jump_t0_u53r_5uppl13d_4ddr35535_b8de1af4}
+^C
+adrian@adrian-virtualbox:~/reversing2$ 
+
+en este primero descargamos el binario y usamos gdb
+luego info functions para saber la direccion de win ya que nos lo pide el servidor y finalmente insertamos la direccion 
