@@ -1,0 +1,4 @@
+En este se nos da el siguiente texto
+xqkwKBN{z0bib1wv_l3kzgxb3l_429in00n}
+usamos rotaciones para obtener la bandera
+picoCTF{r0tat1on_d3crypt3d_429af00f}

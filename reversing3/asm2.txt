@@ -1,0 +1,16 @@
+ <+0>:   push   ebp
+        <+1>:   mov    ebp,esp
+        <+3>:   sub    esp,0x10
+        <+6>:   mov    eax,DWORD PTR [ebp+0xc]   ; Carga el segundo argumento (0x21)
+        <+9>:   mov    DWORD PTR [ebp-0x4],eax   ; Guarda 0x21 en [ebp-0x4]
+        <+12>:  mov    eax,DWORD PTR [ebp+0x8]   ; Carga el primer argumento (0x4)
+        <+15>:  mov    DWORD PTR [ebp-0x8],eax   ; Guarda 0x4 en [ebp-0x8]
+        <+18>:  jmp    0x509 <asm2+28>           ; Salta al inicio del bucle
+        <+20>:  add    DWORD PTR [ebp-0x4],0x1   ; Incrementa [ebp-0x4] en 1
+        <+24>:  add    DWORD PTR [ebp-0x8],0x74  ; Incrementa [ebp-0x8] en 0x74 (116 en decimal)
+        <+28>:  cmp    DWORD PTR [ebp-0x8],0xfb46; Compara [ebp-0x8] con 0xfb46 (64326 en decimal)
+        <+35>:  jle    0x501 <asm2+20>           ; Si [ebp-0x8] <= 0xfb46, salta al inicio del bucle
+        <+37>:  mov    eax,DWORD PTR [ebp-0x4]   ; Mueve [ebp-0x4] a eax
+        <+40>:  leave
+        <+41>:  ret
+0x24C

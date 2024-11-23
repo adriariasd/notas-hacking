@@ -1,0 +1,62 @@
+drian@adrian-virtualbox:~/need4speed$ gdb -q need-for-speed
+Reading symbols from need-for-speed...
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.ubuntu.com>
+Enable debuginfod for this session? (y or [n]) y
+Debuginfod has been enabled.
+To make this setting permanent, add 'set debuginfod enabled on' to .gdbinit.
+Downloading separate debug info for /home/adrian/need4speed/need-for-speed
+(No debugging symbols found in need-for-speed)                                          
+(gdb) set disassembly-flavor intel
+(gdb) disassemble main
+Dump of assembler code for function main:
+   0x000000000000091a <+0>:     push   rbp
+   0x000000000000091b <+1>:     mov    rbp,rsp
+   0x000000000000091e <+4>:     sub    rsp,0x10
+   0x0000000000000922 <+8>:     mov    DWORD PTR [rbp-0x4],edi
+   0x0000000000000925 <+11>:    mov    QWORD PTR [rbp-0x10],rsi
+   0x0000000000000929 <+15>:    mov    eax,0x0
+   0x000000000000092e <+20>:    call   0x8d8 <header>
+   0x0000000000000933 <+25>:    mov    eax,0x0
+   0x0000000000000938 <+30>:    call   0x82f <set_timer>
+   0x000000000000093d <+35>:    mov    eax,0x0
+   0x0000000000000942 <+40>:    call   0x87d <get_key>
+   0x0000000000000947 <+45>:    mov    eax,0x0
+   0x000000000000094c <+50>:    call   0x8ac <print_flag>
+   0x0000000000000951 <+55>:    mov    eax,0x0
+   0x0000000000000956 <+60>:    leave
+   0x0000000000000957 <+61>:    ret
+End of assembler dump.
+(gdb) j *(main+35)
+Este programa no está corriendo.
+(gdb) run
+Starting program: /home/adrian/need4speed/need-for-speed 
+Downloading separate debug info for system-supplied DSO at 0x7ffff7fc3000
+[Depuración de hilo usando libthread_db enabled]                                        
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Keep this thing over 50 mph!
+============================
+
+Creating key...
+Not fast enough. BOOM!
+[Inferior 1 (process 3048) exited normally]
+(gdb) b *(main+30)
+Punto de interrupción 1 at 0x555555400938
+(gdb) run
+Starting program: /home/adrian/need4speed/need-for-speed 
+[Depuración de hilo usando libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+Keep this thing over 50 mph!
+============================
+
+
+Breakpoint 1, 0x0000555555400938 in main ()
+(gdb) j *(main+35)
+Continuando a 0x55555540093d.
+Creating key...
+Finished
+Printing flag:
+PICOCTF{Good job keeping bus #24c43740 speeding along!}
+[Inferior 1 (process 3070) exited normally]
+(gdb) 

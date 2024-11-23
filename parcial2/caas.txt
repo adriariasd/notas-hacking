@@ -1,0 +1,11 @@
+https://caas.mars.picoctf.net/cowsay/picoCTF;%20cat%20falg.txt
+
+ _________
+< picoCTF >
+ ---------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+picoCTF{moooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo0o}

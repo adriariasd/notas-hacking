@@ -1,0 +1,117 @@
+al conectarnos nos da varios datos
+┌──(kali㉿kali)-[~/parcial3]
+└─$ nc saturn.picoctf.net 61383
+anger = 77512733719609620544628542616177787837210842385528435827478176168398320984714
+envy = 28008230566131636417711393655783235840549868141183028600461982291492712478209
+vainglory?
+>
+
+Y se tiene que crear un codigo que nos da el resultado
+
+mport math
+import primefac
+cipher = 77512733719609620544628542616177787837210842385528435827478176168398320984714
+d = 28008230566131636417711393655783235840549868141183028600461982291492712478209
+dem1 = d * 65537 -1
+print(dem1)
+factors_string = '2^9 × 3^6 × 31 × 269 × 18793 × 752281 × 423883 012530 897952 722091 681469 × 98 409845 056250 098758 861502 731253'
+factors = []
+for factor in factors_string.split(' × '):
+    factor = factor.replace(' ', '').strip()
+    if '^' in factor:
+        factor = factor.split('^')
+        factors += [int(factor[0])] * int(factor[1])
+    else:
+        factors.append(int(factor))
+
+factors = sorted(factors, reverse=True)
+
+def get_subsets_sum(data, target, epsilon):
+    """Find sums of values in `data` which gives `target` ± `epsilon`."""
+    subsets, subsets_primes = [], []
+
+    differences = {}
+    for value in data:
+        prospects = []
+        for diff in differences:
+            if (diff >= value) and abs(value - diff) < epsilon:
+                new_subset = [value] + differences[diff]
+                new_subset.sort()
+                if new_subset not in subsets:
+                    subsets.append(new_subset)
+            if value - diff < 0.:
+                prospects.append((value, diff))
+ 
+        # update the differences record
+        for prospect in prospects:
+            new_diff = target - sum(differences[prospect[1]]) - prospect[0]
+            differences[new_diff] = differences[prospect[1]] + [prospect[0]]
+        differences[target - value] = [value]
+    return subsets
+def get_subsets_product(data, target, epsilon):
+    """Find products of values in `data` which gives `target` ± `epsilon` (`epsilon` is given as bit size)."""  
+    data = sorted(data, reverse=True)
+    candidates = []
+    bit_sizes = [math.log2(value) for value in data]
+    target_bit_size = math.log2(target)
+    bit_sizes_substets = get_subsets_sum(bit_sizes, target_bit_size, epsilon)
+    for subset in bit_sizes_substets:
+        values_subset = [data[bit_sizes.index(bit_size)] for bit_size in subset]
+        candidates.append(math.prod(values_subset))
+    return candidates
+k_size_max = int(math.log2(dem1) - math.log2(cipher))
+k_factors = list(filter(lambda factor: math.log2(factor) < k_size_max, factors))
+k_candidates = get_subsets_product(k_factors, 2**17, 1)
+def remove_factors(factors, k_value, k_factors):
+    factors = sorted(factors, reverse=True)
+    k_factors = sorted(k_factors, reverse=True)
+    result = factors.copy()
+    for k_factor in k_factors:
+        if k_value % k_factor == 0:
+            k_value = k_value // k_factor
+            result.remove(k_factor)
+    return result
+porqm1_candidates = set()
+
+for k_candidate in k_candidates:
+    remaining_factors = remove_factors(factors, k_candidate, k_factors)
+    porqm1_candidate_set = get_subsets_product(remaining_factors, 2**128, 5)
+    for porqm1_candidate in porqm1_candidate_set:
+        if primefac.isprime(porqm1_candidate + 1):
+            porqm1_candidates.add(porqm1_candidate)
+            
+porqm1_candidates = list(porqm1_candidates)
+for idx, pm1 in enumerate(porqm1_candidates):
+    for qm1 in porqm1_candidates[idx + 1:]:
+        n_candidate = (pm1 + 1) * (qm1 + 1)
+        possible_plain = pow(cipher, d, n_candidate)
+        possible_plain = possible_plain.to_bytes(length=256, byteorder='big')
+        try:
+            possible_plain = possible_plain.decode('ascii')
+        except UnicodeDecodeError:
+            continue
+        print(possible_plain)
+
+Como se ve en este codigo se sustituyeron varias cosas dependiendo de los datos que nos daban
+
+┌──(kali㉿kali)-[~/parcial3]
+└─$ python3 solucion.py
+1835575406612569055907551606019065927282116708368712145388476933437557897684383232
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~/parcial3]
+└─$ nano solucion.py   
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~/parcial3]
+└─$ python3 solucion.py
+1835575406612569055907551606019065927282116708368712145388476933437557897684383232
+N0U0XTGVMeurnPWZ
+
+┌──(kali㉿kali)-[~/parcial3]
+└─$ nc saturn.picoctf.net 61383
+anger = 77512733719609620544628542616177787837210842385528435827478176168398320984714
+envy = 28008230566131636417711393655783235840549868141183028600461982291492712478209
+vainglory?
+> N0U0XTGVMeurnPWZ
+N0U0XTGVMeurnPWZ
+Conquered!
+picoCTF{7h053_51n5_4r3_n0_m0r3_0795e891}

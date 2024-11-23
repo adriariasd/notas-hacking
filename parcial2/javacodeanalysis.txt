@@ -1,0 +1,4 @@
+Nos loggeamos a la pagina y con burpsuite descubrimos los permisos que tenemos y vemos que se usa jwt para autenticaciones, entonces checamos el codigo fuente y descubrimos como podemos generar un codigo para poder ser autenticados y lo generamos y luego lo ponemos en el storage de la pagina
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJyb2xlIjoiQWRtaW4iLCJpc3MiOiJib29rc2hlbGYiLCJleHAiOjE3MzI5MzU3NzQsImlhdCI6MTczMjMzMDk3NCwidXNlcklkIjoyLCJlbWFpbCI6ImFkbWluIn0.knGrMYG8PKK1sAfKkIx-JjuYoajp83qO5BB3iuNyI_k
+
+picoCTF{w34k_jwt_n0t_g00d_d72df65e}

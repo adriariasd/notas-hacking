@@ -1,0 +1,2 @@
+<p class=picoCTF{pr3tty_c0d3_51d374f0}></p>
+Simplemente analizamos el html de la pagina

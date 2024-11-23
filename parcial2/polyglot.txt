@@ -1,0 +1,2 @@
+picoCtf{f1u3n7_1n_pn9_&_pdf_90974127}
+La primera parte tenemos que convertir el archivo pdf a uno png y la segunda solo es abrir el archivo

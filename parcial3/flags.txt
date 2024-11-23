@@ -1,0 +1,2 @@
+En este ejercicio se nos da una serie de banderas y cada bandera tiene un significado, entonces se decodifica y listo 
+picoCTF{F1AG5AND5TUFF}

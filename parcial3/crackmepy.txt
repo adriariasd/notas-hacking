@@ -1,0 +1,9 @@
+adrian@adrian-virtualbox:~/parcial3$ nano crackme.py 
+adrian@adrian-virtualbox:~/parcial3$ python3 crackme.py 
+picoCTF{1|\/|_4_p34|\|ut_502b984b}
+What's your first number? 1
+What's your second number? 2
+The number with largest positive magnitude is 2
+adrian@adrian-virtualbox:~/parcial3$ 
+
+Solo es ejecutar una funcion que nos decodifica una llave

@@ -1,0 +1,116 @@
+adrian@adrian-virtualbox:~/parcial3$ cat keygenme-trial.py 
+#============================================================================#
+#============================ARCANE CALCULATOR===============================#
+#============================================================================#
+
+import hashlib
+from cryptography.fernet import Fernet
+import base64
+
+
+
+# GLOBALS --v
+arcane_loop_trial = True
+jump_into_full = False
+full_version_code = ""
+
+username_trial = "SCHOFIELD"
+bUsername_trial = b"SCHOFIELD"
+
+key_part_static1_trial = "picoCTF{1n_7h3_|<3y_of_"
+key_part_dynamic1_trial = "xxxxxxxx"
+key_part_static2_trial = "}"
+key_full_template_trial = key_part_static1_trial + key_part_dynamic1_trial + key_part_static2_trial
+
+def check_key(key, username_trial):
+
+    global key_full_template_trial
+
+    if len(key) != len(key_full_template_trial):
+        return False
+    else:
+        # Check static base key part --v
+        i = 0
+        for c in key_part_static1_trial:
+            if key[i] != c:
+                return False
+
+            i += 1
+
+        # TODO : test performance on toolbox container
+        # Check dynamic part --v
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[4]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[5]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[3]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[6]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[2]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[7]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[1]:
+            return False
+        else:
+            i += 1
+
+        if key[i] != hashlib.sha256(username_trial).hexdigest()[8]:
+            return False
+
+
+
+        return True
+
+
+Analizando este codigo podemos ver como funciona la generacion de la llave, primero al usuario se le aplica un sha256 y luego se toma un caracter, se hace esto 8 veces y despues lo resultante es la parte 2 de la llave, entonces se puede hacer un sencillo script que nos da la llave
+
+import hashlib
+import base64
+
+
+key_part_static1_trial = "picoCTF{1n_7h3_|<3y_of_"
+key_part_dynamic1_trial = "xxxxxxxx"
+key_part_static2_trial = "}"
+key_full_template_trial = key_part_static1_trial + key_part_dynamic1_trial + key_part_static2_trial
+
+username_trial = b"SCHOFIELD"
+
+potential_dynamic_key = ""
+
+# where our input begins:
+offset = 23
+
+# positions in username_trial
+positions = [4,5,3,6,2,7,1,8]
+
+for p in positions:
+    potential_dynamic_key += hashlib.sha256(username_trial).hexdigest()[p]
+
+key = key_part_static1_trial + potential_dynamic_key + key_part_static2_trial
+print(key)
+print(len(key))
+
+y Esto nos imprime la llave
+adrian@adrian-virtualbox:~/parcial3$ python solucion.py 
+picoCTF{1n_7h3_|<3y_of_e584b363}
+32

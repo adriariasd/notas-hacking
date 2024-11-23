@@ -1,0 +1,10 @@
+Para este lo unico que se necesita hacer es un print dentro del codigo y al ejecutarlo nos de la bandera
+pw = input('What\'s the password? ')
+
+if pw == 'batteryhorse':
+  print('picoCTF{175_chr157m45_5274ff21}')
+else:
+  print('That password is incorrect.')
+
+
+What's the password? 

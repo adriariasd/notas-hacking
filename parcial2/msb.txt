@@ -1,0 +1,5 @@
+Este trata del most significant bit con stego solve podemos cambiarle los bits y luego con grep encontraremos la bandera
+picoCT F{15_y0u
+725f71756535375f 7175317830373163  r_que57_ qu1x071c
+5f30725f68337230 31635f6235653033  _0r_h3r0 1c_b5e03
+6263357d0a0a2254 686f752068617374  bc5}.
