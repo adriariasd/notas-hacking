@@ -1,0 +1,23 @@
+┌──(kali㉿kali)-[~]
+└─$ touch mijwt      
+                                                                                                                                                                  
+┌──(kali㉿kali)-[~]
+└─$ nano mijwt      
+                                                                                                                                                                  
+┌──(kali㉿kali)-[~]
+└─$ cat mijwt                                                                                          
+eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiYWRyaSJ9.cBRPTvglzT8xWyfz9XNqY5qrDM0ntQQjucu1Bb6J6Ok
+
+┌──(kali㉿kali)-[~]
+└─$ john mijwt --wordlist=/usr/share/wordlists/rockyou.txt                      
+Using default input encoding: UTF-8
+Loaded 1 password hash (HMAC-SHA256 [password is key, SHA256 128/128 SSE2 4x])
+Will run 2 OpenMP threads
+Press 'q' or Ctrl-C to abort, almost any other key for status
+ilovepico        (?)     
+1g 0:00:00:03 DONE (2024-11-24 18:29) 0.2695g/s 1993Kp/s 1993Kc/s 1993KC/s iloverob4live345..ilovepatri
+Use the "--show" option to display all of the cracked passwords reliably
+Session completed.
+
+nueva llave:eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyIjoiYWRtaW4ifQ.gtqDl4jVDvNbEe_JYEZTN19Vx6X9NNZtRVbKPBkhO-s
+picoCTF{jawt_was_just_what_you_thought_1ca14548}
