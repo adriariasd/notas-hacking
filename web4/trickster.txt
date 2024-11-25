@@ -1,0 +1,2 @@
+En esta pagina puedes subir imagenes, pero para verfificar que un archivo es una imagen solo checa que los primeros bits sean de png entonces subimos un archivo que nos permite usar un webshell y luego con el webshell leemos los archivos y buscamos la bandera
+picoCTF{c3rt!fi3d_Xp3rt_tr1ckst3r_3f706222}

